@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Form from "./components/form/Form";
 import Button from "./components/formElements/Button";
+
 import { css_configuration } from "./model/css_configuration";
+import Card from "./components/card/Card";
 
 const Base = () => {
   const [step, setStep] = useState(1);
@@ -22,19 +24,15 @@ const Base = () => {
   };
 
   return (
-    <div className={css_configuration.base_body}>
-      <div className={css_configuration.base_container}>
-      
-        <form onSubmit={handleSubmit}>
-          <div className={css_configuration.form_container}>
-          <div className="font-medium text-xl">
-            Create a job
-          </div>
-          <div className="font-medium text-base text-end">
-            Step {step}
-          </div>
-            <Form handleChange={handleChange} step={step} fields={fields} />
-          </div>
+    <>
+      <div className={css_configuration.base_body}>
+        <div className={css_configuration.base_container}>
+          <form onSubmit={handleSubmit}>
+            <div className={css_configuration.form_container}>
+              <div className="font-medium text-xl align-middle max-h-12">Create a job</div>
+              <div className="font-medium text-base text-end align-middle max-h-12">Step {step}</div>
+              <Form handleChange={handleChange} step={step} fields={fields} />
+            </div>
             <div className={css_configuration.buttons_group}>
               {step === 1 && (
                 <Button
@@ -51,9 +49,13 @@ const Base = () => {
                 />
               )}
             </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
+      <Card/>
+      <br></br>
+    </>
+    
   );
 };
 
