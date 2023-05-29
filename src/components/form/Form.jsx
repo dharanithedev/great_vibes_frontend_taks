@@ -3,7 +3,6 @@ import Input from "../formElements/Input";
 import RadioButton from "../formElements/RadioButton";
 import { form_configuration } from "../../model/form_configuration.js";
 import { css_configuration } from "../../model/css_configuration";
-
 const Form = ({ step, fields, handleChange }) => {
   if (step === 1) {
     return (
