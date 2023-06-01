@@ -8,7 +8,7 @@ export const css_configuration = {
     buttons_group : "max-w-xl mx-auto flex justify-end relative",
     radio_button_group: {radio_button:"form-radio text-blue-500 h-5 w-5", radio_button_lable:"inline-flex items-center mr-4", radio_button_span:"ml-1 text-gray-700 text-sm"},
     button:"py-2 px-4 rounded-md bg-sky-500 text-white",
-    card_container : "border border-gray-300 rounded-lg max-w-[830px] mx-auto mb-6",
+    card_container : "border border-gray-300 rounded-lg max-w-[830px] mx-auto mb-6 font-['Poppins']",
     card_sub_container : "max-h-[320px] py-4 px-6",
     card_box: "flex flex-col h-full justify-between",
     card_details_container : "flex items-start",
